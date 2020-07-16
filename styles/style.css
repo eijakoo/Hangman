@@ -1,0 +1,52 @@
+
+body {
+    max-width: 768px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.wrapper{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    grid-auto-rows:minmax(70px, auto);
+    grid-gap:1em;
+    justify-items:stretch;
+    align-items:stretch;
+  }
+
+  .wrapper > div{
+    background:#eee;
+    padding:1em;
+  }
+  .wrapper > div:nth-child(odd){
+    background:#ddd;
+  }
+
+  .inBox{
+      align-self: auto;
+  }
+
+  .error {
+    color: red; 
+    font-size: large;
+    font-weight: bold;
+ }
+ 
+ .win {
+     color: green; 
+     font-size: large;
+     font-weight: bold;
+  }
+ 
+  .loose {
+     color: red; 
+     font-size: large;
+     font-weight: bold;
+  }
+
+
+
+
+  h1 {
+      border-bottom: 1px solid black;   
+  }

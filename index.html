@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Hangman</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="figure-container"><img id="kuva" src="images/kuva0.jpg" alt="hangman">
+        </div>
+        <div class="box5 nested">
+          <div>
+              <h1>Hangman</h1>
+          </div>
+          <div class="inBox">
+              <span id="guessesNumber">Arvauksia: 0</span> <br>
+              <span id="failed">Huteja saa tulla: 6 </span> <br>
+          </div>
+        </div>
+        <div id="boxi2" class="boxi2">    
+            <!-- inputs -->
+        </div>
+        <div class="boxi4">
+            <label id="labelInChar" for="item">Arvaa kirjain:</label>
+            <input name="inChar" id="inChar" size="1">
+            <button id="startGame" type="button"></button>
+        </div>
+        <div id="boxi3" class="boxi3">
+            <span id="guesses">Arvatut kirjaimet: </span><br> 
+        </div>
+        <div>
+            <span class="error" name="error" id="error"></span>
+            <strong><span class="win" id="win"></span></strong>
+            <strong><span class="loose" id="loose"></span></strong>
+        </div>
+      </div>
+    <script src="main.js"></script>
+  </body>
+</html>
